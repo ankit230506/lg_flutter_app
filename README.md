@@ -1,1 +1,1 @@
-#Liquid Galaxy Controller APP
+#Liquid Galaxy Controller APp
