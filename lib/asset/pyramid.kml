@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <n>3D Colored Pyramid - Barcelona</n>
+    <description>A simple pyramid with 4 colored faces in Barcelona, Spain</description>
+    
+    <!-- Red color for base -->
+    <Style id="red">
+      <PolyStyle>
+        <color>7d0000ff</color>
+      </PolyStyle>
+    </Style>
+    
+    <!-- Green color for south face -->
+    <Style id="green">
+      <PolyStyle>
+        <color>7d00ff00</color>
+      </PolyStyle>
+    </Style>
+    
+    <!-- Blue color for east face -->
+    <Style id="blue">
+      <PolyStyle>
+        <color>7dff0000</color>
+      </PolyStyle>
+    </Style>
+    
+    <!-- Yellow color for north face -->
+    <Style id="yellow">
+      <PolyStyle>
+        <color>7d00ffff</color>
+      </PolyStyle>
+    </Style>
+    
+    <!-- Base of pyramid (red square on ground) -->
+    <Placemark>
+      <n>Pyramid Base</n>
+      <styleUrl>#red</styleUrl>
+      <Polygon>
+        <extrude>1</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              2.1734,41.3851,0
+              2.1744,41.3851,0
+              2.1744,41.3861,0
+              2.1734,41.3861,0
+              2.1734,41.3851,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    
+    <!-- South face (green triangle) -->
+    <Placemark>
+      <n>South Face</n>
+      <styleUrl>#green</styleUrl>
+      <Polygon>
+        <extrude>1</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              2.1734,41.3851,0
+              2.1739,41.3856,100
+              2.1744,41.3851,0
+              2.1734,41.3851,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    
+    <!-- East face (blue triangle) -->
+    <Placemark>
+      <n>East Face</n>
+      <styleUrl>#blue</styleUrl>
+      <Polygon>
+        <extrude>1</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              2.1744,41.3851,0
+              2.1739,41.3856,100
+              2.1744,41.3861,0
+              2.1744,41.3851,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    
+    <!-- North face (yellow triangle) -->
+    <Placemark>
+      <n>North Face</n>
+      <styleUrl>#yellow</styleUrl>
+      <Polygon>
+        <extrude>1</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              2.1744,41.3861,0
+              2.1739,41.3856,100
+              2.1734,41.3861,0
+              2.1744,41.3861,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    
+  </Document>
+</kml>
